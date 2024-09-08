@@ -206,7 +206,7 @@ nav{
   }
 
   .button-text{
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .intro{
@@ -216,7 +216,7 @@ nav{
 
   .home-text{
     font-size: 20px;
-    padding: 0px 50px;
+    margin: 0px 50px;
   }
 
   .home-page{
@@ -237,6 +237,10 @@ nav{
 
   .my-photo{
     margin: 40px 0px;
+  }
+  
+  .about-page{
+    width: 100vw;
   }
 
 
