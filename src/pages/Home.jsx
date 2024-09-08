@@ -6,9 +6,14 @@ import {motion} from 'framer-motion'
 
 function Home() {
   const [text] = useTypewriter({
-    words: ["a frontend developer.", "learning full stack development.", "a frontend developer."],
+    words: [
+      "a frontend developer.", 
+      "learning full stack development.", 
+      "a frontend developer.",
+      "learning full stack development."
+    ],
     loop: 4,
-  })
+  });
 
 
   return (
