@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
+import Modal from "./Modal";
 
 function ContactForm() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
   const accessKey = import.meta.env.VITE_FORM_ACCESS_KEY;
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -21,7 +24,15 @@ function ContactForm() {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      setModalMessage("Your message has been sent successfully!");
+      setShowModal(true);
+      event.target.reset();
+
+
+    } else {
+      setModalMessage("There was an error sending your message.");
+      setShowModal(true);
+
     }
   };
 
@@ -87,6 +98,9 @@ function ContactForm() {
             Send message
           </button>
         </form>
+        {showModal && (
+          <Modal message={modalMessage} onClose={() => setShowModal(false)} />
+        )}
       </div>
     </section>
   );
