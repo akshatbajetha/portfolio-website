@@ -12,7 +12,7 @@ function Home() {
       "a frontend developer.",
       "learning full stack development."
     ],
-    loop: 3,
+    loop: 4,
   });
 
 
