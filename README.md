@@ -85,10 +85,6 @@ or with Yarn:
 yarn dev
 ```
 
-### Access the App
-
-After the server starts, you can access the app by visiting http://localhost:5173 in your browser.
-
 ### Configure Environment Variables
 
 Create a .env file for using Web3Forms (Instructions are given in the .env.example file)
