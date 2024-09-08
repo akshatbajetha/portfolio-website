@@ -34,7 +34,7 @@ Welcome to the Vite React App repository! Follow these instructions to run the a
 4. [Install Dependencies](#install-dependencies)
 5. [Run the Development Server](#run-the-development-server)
 6. [Access the App](#access-the-app)
-7. [Optional: Configure Environment Variables](#optional-configure-environment-variables)
+7. [Configure Environment Variables](#configure-environment-variables)
 
 ### Prerequisites
 
@@ -47,7 +47,7 @@ Ensure you have the following installed on your machine:
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/dummy-user/vite-react-app.git
+git clone https://github.com/akshatbajetha/portfolio-website.git
 ```
 
 ### Navigate to the Project Directory
@@ -55,7 +55,7 @@ git clone https://github.com/dummy-user/vite-react-app.git
 Change into the directory of the cloned repository:
 
 ```bash
-cd vite-react-app
+cd portfolio-website
 ```
 
 ### Install Dependencies
