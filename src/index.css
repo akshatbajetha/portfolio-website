@@ -29,6 +29,10 @@
   font-size: 60px;
 }
 
+.home-page-text{
+  width: 55%;
+}
+
 .gradient {
   background: -webkit-linear-gradient(left, #ff8660, #9a33ff);
   -webkit-background-clip: text;
@@ -237,6 +241,7 @@ nav{
 
   .my-photo{
     margin: 40px 0px;
+    width: 200px;
   }
   
   .about-page{
