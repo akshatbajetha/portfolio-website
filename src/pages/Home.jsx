@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 
 function Home() {
   const [text] = useTypewriter({
-    words: ["a frontend developer", "learning Full Stack Development"],
+    words: ["a frontend developer.", "learning full stack development.", "a frontend developer."],
     loop: 4,
   })
 
@@ -24,7 +24,7 @@ function Home() {
       
       <div className='flex justify-center items-center align-middle flex-col home-page-text'>
           <div className='text-center mb-2'>
-            <h1 className='dark:text-text-colour text-black-text heading font-bold'>Hi, I am <span className='gradient'>Akshat Bajetha</span></h1>
+            <h1 className='dark:text-text-colour text-black-text heading font-bold'>Hi, I am <span className='gradient-text'>Akshat Bajetha</span></h1>
           </div>
           <div className='text-center mb-2'>
             <h3><span className='dark:text-text-colour text-black-text subheading font-bold'>I am <span className='blue-gradient'>{text}</span></span></h3>
@@ -34,7 +34,7 @@ function Home() {
           </div>
             <Button text={'View Resume'} />
       </div>
-      <Avatar width='300px' />
+      <Avatar width='350px' />
     </motion.div>
   )
 }
