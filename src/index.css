@@ -206,11 +206,11 @@ nav{
   }
 
   .button-text{
-    font-size: 40px;
+    font-size: 15px;
   }
 
   .intro{
-    max-width: 400px;
+    width: 100vw;;
     padding-top: 10px;
   }
 
@@ -238,6 +238,7 @@ nav{
   .my-photo{
     margin: 40px 0px;
   }
+
 
 
 }

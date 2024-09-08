@@ -7,8 +7,8 @@ function AboutSection() {
 
   return (
     <>
-      <div className='flex justify-center w-full about-me'>
-        <div className='dark:text-text-colour text-black-text intro'>
+      <div className='flex justify-center w-full about-me intro'>
+        <div className='dark:text-text-colour text-black-text '>
         Hi guys, I am <span className='blue-gradient'>Akshat Bajetha</span> from Delhi, India, currently in my third year of Computer Science and Engineering from <span className='orange-gradient'>Bennett University</span>. I'm a self-taught web developer currently learning MERN stack. I have a passion for learning and creating new things.
         </div>
         <div>
