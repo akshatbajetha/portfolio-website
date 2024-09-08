@@ -3,6 +3,7 @@ import Avatar from '../components/Avatar'
 import Button from '../components/Button'
 import {useTypewriter} from 'react-simple-typewriter'
 import {motion} from 'framer-motion'
+import { useState } from 'react'
 
 function Home() {
   const [text] = useTypewriter({
@@ -14,6 +15,8 @@ function Home() {
     ],
     loop: 3,
   });
+
+  const [darkLine, setDarkLine] = useState(false)
 
 
   return (
@@ -32,7 +35,7 @@ function Home() {
             <h1 className='dark:text-text-colour text-black-text heading font-bold'>Hi, I am <span className='gradient-text'>Akshat Bajetha</span></h1>
           </div>
           <div className='text-center mb-2'>
-            <h3><span className='dark:text-text-colour text-black-text subheading font-bold'>I am <span className='blue-gradient'>{text}</span></span></h3>
+            <h3><span className='dark:text-text-colour text-black-text subheading font-bold'>I am <span className='blue-gradient underline decoration-background dark:decoration-white-background'>{text}</span></span></h3>
           </div>
           <div className='text-center mb-2 brief flex'>
             <p className='dark:text-off-text-colour text-off-black home-text'>A self-taught frontend developer, currently learning full stack development (MERN). I am interested in exploring and learning new technologies.</p>

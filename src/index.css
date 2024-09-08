@@ -65,8 +65,8 @@
   background: -webkit-linear-gradient(left, #5badff, #1373d1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: underline;
-  text-decoration-color: white;
+  /* text-decoration-line: underline;
+  text-decoration-color: white; */
 }
 
 .orange-gradient {
