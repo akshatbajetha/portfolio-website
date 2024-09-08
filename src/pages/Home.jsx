@@ -16,8 +16,6 @@ function Home() {
     loop: 3,
   });
 
-  const [darkLine, setDarkLine] = useState(false)
-
 
   return (
     <motion.div 
