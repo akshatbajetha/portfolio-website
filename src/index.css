@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242423;
+  border-radius: 100vw;
+}
+
+.invert-color {
+  filter: invert(1);
+}
+
+.heading {
+  font-size: 60px;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(left, #ff8660, #9a33ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-gradient {
+  background: -webkit-linear-gradient(left, #5badff, #1373d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orange-gradient {
+  background: -webkit-linear-gradient(top, #ff8660, #d5491d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brief {
+  font-size: 20px;
+  width: 500px;
+}
+
+.subheading {
+  font-size: 40px;
+}
+
+.glow-button {
+  transition: box-shadow 0.1s ease;
+}
+
+.glow-button:hover {
+  box-shadow: 1px 1px 7px rgba(255, 255, 255, 0.6);
+}
+
+.nav-items:hover {
+  opacity: 1;
+}
+
+.card {
+  height: fit-content;
+  width: 384px;
+}
+
+.my-photo {
+  border-radius: 50%;
+}
+
+.intro {
+  max-width: 800px;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.tech-heading {
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.switch {
+  width: 170px;
+  height: 100px;
+  border-radius: 100px;
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.switch.on {
+  background-color: #22cc88;
+  justify-content: flex-end;
+}
+
+.switch.off {
+  background-color: #dddddd;
+  justify-content: flex-start;
+}
+
+.switch div {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 200px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.02);
+}
+
+
+.toggle-btn {
+  background-color: #c8cacb;
+  border: 1px solid #aaa;
+  border-radius: 99px;
+  width: 60px;
+  height: 25px;
+  transition: background-color 0.1s ease, border-color 0.2s ease;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.748);
+  position: relative;
+}
+
+.toggle-btn .thumb{
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 99px;
+  transform: translateX(0);
+  transition: left 0.15s ease;
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle-btn.toggled{
+  background-color: #181a1c;
+}
+
+.toggle-btn.toggled .thumb{
+  left: calc(60px - 20px);
+}
+
+.hamburger{
+  display: none;
+}
+
+.loader{
+  height: 100vh;
+  width: 100%;
+}
+
+
+/* Break Point 850px for Hamburger */
+
+@media (max-width: 850px) {
+
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .subheading {
+    font-size: 20px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .intro {
+    font-size: 18px;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+  }
+
+  .button-text{
+    font-size: 40px;
+  }
+
+  .intro{
+    max-width: 400px;
+    padding-top: 10px;
+  }
+
+  .home-text{
+    font-size: 20px;
+    padding: 0px 50px;
+  }
+
+  .home-page{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tech-heading{
+    padding: 0px;
+  }
+
+  .about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-photo{
+    margin: 40px 0px;
+  }
+
+
+}
