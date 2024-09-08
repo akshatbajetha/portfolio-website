@@ -11,11 +11,13 @@ Welcome to my portfolio website repository! This project highlights my skills an
 - Responsive Design: Optimized for various devices and screen sizes using Tailwind CSS and media queries. 📱💻
 - Contact Form: A contact form powered by Web3Forms for direct communication. 📧
 
-## 🛠 Portfolio Website
+## 🛠 Tech Stack
 - React
 - Tailwind CSS
+- React Router DOM
 - Framer Motion
 - Web3Forms
+  
 ## 🌐 Live Demo
 
 Check out the live version of the portfolio at LINK . 🚀
