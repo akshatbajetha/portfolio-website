@@ -73,7 +73,7 @@
 }
 
 .card {
-  height: fit-content;
+  min-height: 95%;
   width: 384px;
 }
 
