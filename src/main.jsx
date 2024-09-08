@@ -8,6 +8,8 @@ import Projects from './pages/Projects.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 
+import { Analytics } from "@vercel/analytics/react"
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -36,5 +38,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
+    <Analytics />
   </StrictMode>,
 )
