@@ -52,7 +52,7 @@ function LogoCarousel() {
       ];
     
   return (
-    <AppContainer className='p-4 m-4'>
+    <AppContainer className='p-4 m-4 logo-carousel'>
       <Wrapper>
         <Marquee>
           <MarqueeGroup>

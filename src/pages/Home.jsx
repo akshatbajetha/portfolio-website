@@ -26,7 +26,7 @@ function Home() {
         delay: 0.1,
       }}
       exit={{ x: 100, opacity: 0 }}
-    className='w-full h-screen flex overflow-y-hidden flex-row items-center justify-center home-page align-middle bg-white-background dark:bg-background'>
+    className='w-full h-screen flex flex-row items-center justify-center home-page align-middle bg-white-background dark:bg-background'>
       
       <div className='flex justify-center items-center align-middle flex-col home-page-text'>
           <div className='text-center mb-2'>

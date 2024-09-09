@@ -205,6 +205,19 @@ nav{
 
 @media (max-width: 850px) {
 
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .logo-carousel{
+    max-width: 200px;
+  }
+
+  .brief {
+    width: 300px;
+  }
+
 
   .heading {
     font-size: 30px;
@@ -242,9 +255,12 @@ nav{
     padding-top: 10px;
   }
 
+  
+
   .home-text{
-    font-size: 20px;
+    padding-left: 30px;
     margin: 0px 50px;
+    font-size: 10px;
   }
 
   .home-page{
@@ -269,7 +285,26 @@ nav{
   }
   
   .about-page{
-    width: 100vw;
+    flex-wrap: wrap;
+  }
+
+  .logo-carousel {
+    width: 100%;
+  }
+  
+  .logo-carousel .Marquee {
+    width: 100%;
+    mask-image: linear-gradient(
+      to right,
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1) 5%,
+      hsl(0 0% 0% / 1) 95%,
+      hsl(0 0% 0% / 0)
+    );
+  }
+  
+  .logo-carousel .ImageGroup {
+    width: 80%;
   }
 
 
