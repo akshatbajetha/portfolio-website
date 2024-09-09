@@ -7,7 +7,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/" && window.innerWidth > 850) {
+    if (location.pathname === "/") {
       document.body.style.overflowY = "hidden";
     } else if (location.pathname === "/about" && window.innerWidth > 850) {
       document.body.style.overflow = "hidden";
