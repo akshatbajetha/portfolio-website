@@ -1,10 +1,10 @@
 import React from 'react'
 import Photo from '../assets/avatar.png'
 
-function Avatar({width='100px'}) {
+function Avatar() {
   return (
     <div className='mb-10'>
-      <img className='m-1 p-1' src={Photo} alt="Logo" width={width} />
+      <img className='m-1 p-1 avatar-pic' src={Photo} alt="Logo"/>
     </div>
   )
 }

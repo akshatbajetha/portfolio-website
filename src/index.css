@@ -200,6 +200,10 @@ nav{
   width: 100%;
 }
 
+.avatar-pic{
+  width: 350px;
+}
+
 
 /* Break Point 850px for Hamburger */
 
@@ -208,6 +212,10 @@ nav{
   body{
     overflow-x: hidden;
     overflow-y: auto;
+  }
+
+  .avatar-pic{
+    width: 200px;
   }
 
   .logo-carousel{
@@ -258,7 +266,6 @@ nav{
   
 
   .home-text{
-    padding-left: 30px;
     margin: 0px 50px;
     font-size: 10px;
   }

@@ -40,7 +40,7 @@ function Home() {
           </div>
             <Button text={'View Resume'} />
       </div>
-      <Avatar width='350px' />
+      <Avatar/>
     </motion.div>
   )
 }
