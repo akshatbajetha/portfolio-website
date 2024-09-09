@@ -226,6 +226,12 @@ nav{
     width: 300px;
   }
 
+  .home-page{
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+  }
+
 
   .heading {
     font-size: 30px;
@@ -272,11 +278,6 @@ nav{
 
   .cards{
     padding: 20px;
-  }
-
-  .home-page{
-    display: flex;
-    flex-direction: column;
   }
 
   .tech-heading{
