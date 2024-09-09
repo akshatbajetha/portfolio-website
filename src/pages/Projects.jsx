@@ -40,7 +40,7 @@ function Projects() {
   return (
     <div className='flex flex-col justify-center items-center dark:bg-background bg-white-background'>
       <h1 className='dark:text-text-colour text-black-text heading font-bold orange-gradient heading mb-4'>Projects</h1>
-      <div className='flex flex-wrap justify-around'>
+      <div className='flex flex-wrap justify-around cards'>
 
           <Card image={BlogNationImage} title={blogNation.title} description={blogNation.description} githubImg={githubLogo} websiteImg={websiteLogo} githubLink={blogNation.githubLink} websiteLink={blogNation.websiteLink}/>
 

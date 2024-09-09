@@ -266,8 +266,12 @@ nav{
   
 
   .home-text{
-    margin: 0px 50px;
+    margin: 0px 20px;
     font-size: 10px;
+  }
+
+  .cards{
+    padding: 20px;
   }
 
   .home-page{
