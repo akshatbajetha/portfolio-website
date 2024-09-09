@@ -20,7 +20,7 @@ Welcome to my portfolio website repository! This project highlights my skills an
   
 ## 🌐 Live Demo
 
-Check out the live version of the portfolio at LINK . 🚀
+Check out the live version of the portfolio at [Akshat Bajetha](http://akshatbajetha.vercel.app/) . 🚀
 
 ## Setup the Project Locally
 
