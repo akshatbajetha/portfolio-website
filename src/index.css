@@ -226,6 +226,10 @@ nav{
     width: 300px;
   }
 
+  .glow-button{
+    font-size: 15px;
+  }
+
   .home-page{
     flex-direction: column;
     justify-content: start;
@@ -273,7 +277,7 @@ nav{
 
   .home-text{
     margin: 0px 20px;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .cards{
