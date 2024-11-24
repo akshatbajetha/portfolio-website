@@ -1,81 +1,92 @@
-import React from 'react'
-import mongoDb from '../assets/Logos/mongoDb.svg'
-import Javascript from '../assets/Logos/Javascript.svg'
-import Bootstrap5 from '../assets/Logos/Bootstrap5.svg'
-import Java from '../assets/Logos/Java.svg'
-import NodeJS from '../assets/Logos/NodeJS.svg'
-import git from '../assets/Logos/git.svg'
-import Postman from '../assets/Logos/Postman.svg'
-import ReactLogo from '../assets/Logos/React.svg'
-import Tailwind from '../assets/Logos/Tailwind.svg'
-import styled, {keyframes, css} from 'styled-components'
-import LogoImages from './LogoImages'
+import React from "react";
+import mongoDb from "../assets/Logos/mongoDb.svg";
+import Javascript from "../assets/Logos/Javascript.svg";
+import Bootstrap5 from "../assets/Logos/Bootstrap5.svg";
+import Java from "../assets/Logos/Java.svg";
+import NodeJS from "../assets/Logos/NodeJS.svg";
+import git from "../assets/Logos/git.svg";
+import Postman from "../assets/Logos/Postman.svg";
+import ReactLogo from "../assets/Logos/React.svg";
+import Tailwind from "../assets/Logos/Tailwind.svg";
+import Typescript from "../assets/Logos/Typescript.svg";
+import Nextjs from "../assets/Logos/Nextjs.svg";
+
+import styled, { keyframes, css } from "styled-components";
+import LogoImages from "./LogoImages";
 
 function LogoCarousel() {
-    const row = [
-      {
-        src: git,
-        name: 'Git',
-      },
-      {
-        src: mongoDb,
-        name: 'MongoDB',
-      },
-      {
-        src: Javascript,
-        name: 'Javascript',
-      },
-      {
-        src: Bootstrap5,
-        name: 'Bootstrap',
-      },
-      {
-        src: Java,
-        name: 'Java',
-      },
-      {
-        src: NodeJS,
-        name: 'NodeJS',
-      },
-      {
-        src: Postman,
-        name: 'Postman',
-      },
-      {
-        src: ReactLogo,
-        name: 'React',
-      },
-      {
-        src: Tailwind,
-        name: 'TailwindCSS',
-      },
-      ];
-    
+  const row = [
+    {
+      src: git,
+      name: "Git",
+    },
+    {
+      src: mongoDb,
+      name: "MongoDB",
+    },
+    {
+      src: Javascript,
+      name: "Javascript",
+    },
+    {
+      src: Bootstrap5,
+      name: "Bootstrap",
+    },
+    {
+      src: Java,
+      name: "Java",
+    },
+    {
+      src: NodeJS,
+      name: "NodeJS",
+    },
+    {
+      src: Typescript,
+      name: "Typescript",
+    },
+    {
+      src: Nextjs,
+      name: "NextJS",
+    },
+    {
+      src: Postman,
+      name: "Postman",
+    },
+    {
+      src: ReactLogo,
+      name: "React",
+    },
+    {
+      src: Tailwind,
+      name: "TailwindCSS",
+    },
+  ];
+
   return (
-    <AppContainer className='p-4 m-4 logo-carousel'>
+    <AppContainer className="p-4 m-4 logo-carousel">
       <Wrapper>
         <Marquee>
           <MarqueeGroup>
             {row.map((el) => (
               <ImageGroup>
-                <LogoImages src={el.src} name={el.name}/>
+                <LogoImages src={el.src} name={el.name} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
             {row.map((el) => (
               <ImageGroup>
-                <LogoImages src={el.src} name={el.name}/>
+                <LogoImages src={el.src} name={el.name} />
               </ImageGroup>
             ))}
           </MarqueeGroup>
         </Marquee>
       </Wrapper>
     </AppContainer>
-  )
+  );
 }
 
-export default LogoCarousel
+export default LogoCarousel;
 
 const AppContainer = styled.div`
   width: 100vw;
@@ -86,7 +97,6 @@ const AppContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
 `;
 
 const Wrapper = styled.div`
@@ -112,7 +122,6 @@ const Marquee = styled.div`
     hsl(0 0% 0% / 1) 90%,
     hsl(0 0% 0% / 0)
   );
-
 `;
 
 const scrollX = keyframes`
@@ -132,13 +141,10 @@ const common = css`
   white-space: nowrap;
   width: 100%;
   animation: ${scrollX} 25s linear infinite;
-
 `;
 
 const MarqueeGroup = styled.div`
   ${common}
-
-  
 `;
 
 const ImageGroup = styled.div`
@@ -146,8 +152,6 @@ const ImageGroup = styled.div`
   place-items: center;
   width: clamp(10rem, 1rem + 40vmin, 30rem);
   padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
-
-  
 `;
 
 const Image = styled.img`
